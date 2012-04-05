@@ -1,6 +1,6 @@
 ﻿{
 	"name": "MyReader for Chrome",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Inspired by Reeder for Chrome",
 	"icons": {	"16": "icon16.png",
 				"48": "icon48.png",
