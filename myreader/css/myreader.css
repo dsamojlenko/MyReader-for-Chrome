@@ -157,8 +157,10 @@ body {
 }
 /* Nav font */
 #scrollable-sections * {
-  font-weight: bold !important;
   font-size: 12px !important;
+}
+.scroll-tree li a .name-unread {
+  font-weight: normal !important;
 }
 /* Clear Nav background */
 #scrollable-sections .lhn-section,
