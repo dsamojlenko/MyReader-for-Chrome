@@ -1,0 +1,35 @@
+/* base.less */
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: @scrollbar_width !important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background: rgba(0,0,0,0.3) !important;
+    border-radius: 4px !important;
+    height: 50px !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgba(0,0,0,0.2) !important;
+}
+
+::-webkit-scrollbar-track {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Global font rendering */
+
+#main * {
+    text-rendering: optimizeLegibility !important;
+    color: @fontcolor !important;
+}
+
+#entries.list  a {
+    color: inherit;
+    text-decoration: none;
+}
+

@@ -1,0 +1,96 @@
+/* structure.less */
+
+body { background-color: @bgcolor !important; }
+
+/* Top-bar */
+
+#top-bar.jfk {
+    position: fixed !important;
+    top: 1px !important;
+    width: 100% !important;
+    height: @topbar_height !important;
+    .topbar_style;
+}
+
+#viewer-header {
+    background: none !important;
+}
+
+#main { 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAFAF7), to(#EDECE7));
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAFAF7), to(#EDECE7));
+	border-bottom: solid 1px #7B7B7B !important;
+	height: @topbar_height;
+}
+
+/* Bottom-bar */
+
+#viewer-header-container {
+	position: fixed !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+    height: 33px !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#C6C6C6), to(#9F9F9F)) !important;
+    border: none !important;
+    border-top: solid 1px #E3E3E3 !important;
+    border-bottom: solid 1px #7B7B7B !important;
+    visibility: visible !important;
+    z-index: 2 !important;
+    box-shadow: 0px -1px 0px 0px #8E8D8E !important;
+}
+
+/* 1st Column / Navigation */
+
+#scrollable-sections {
+    position: fixed !important;
+    top: @topbar_offset !important;
+	left: 0px !important;
+    bottom: 0 !important;
+    height: auto !important;
+    width: @leftcol !important;
+    border-right: 1px solid #ABA99D !important;
+    background-color: #FFF !important;
+    box-shadow: inset -1px 0px 6px -3px #000 !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+/* Nav font */
+
+#scrollable-sections * {
+    font-weight: bold !important;
+    font-size: 12px !important;
+}
+
+/* Clear Nav background */
+
+#scrollable-sections .lhn-section,
+#sub-tree .folder,
+#sub-tree .sub {
+    background: none !important;
+}
+
+#chrome-view-links {
+    position: fixed !important;
+    top: 3px !important;
+    left: 10px !important;
+}
+
+#viewer-entries-container {
+    left: @entries_position !important;
+	width: @entries_width !important;
+	position: fixed !important;
+    top: @topbar_offset !important;
+    bottom: 0 !important;
+    height: auto !important;
+    border-right: 1px solid @entries_border !important;
+	background: @entries_bg !important;
+}
+
+/* google bar (reader settings etc) */
+
+#gb {
+	position: fixed !important;
+	left: @google_bar_left;
+}

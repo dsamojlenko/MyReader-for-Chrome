@@ -1,0 +1,128 @@
+/* Force display toggle items */
+
+#lhn-selectors .lhn-section-secondary,
+#sub-tree-container,
+#lhn-subscriptions-menubutton {
+    display: block !important;
+}
+
+/* Clear google new left orange border */
+
+#lhn-selectors .selector,
+#sub-tree .link {
+    border: none !important;
+}
+
+/* selectors text alignment */
+
+#lhn-selectors .selector,
+#sub-tree .folder-name-text,
+#sub-tree > .folder > ul > .sub > .link > .sub-name-text {
+    padding-left: 40px !important;
+}
+
+/* selector icon alignment */
+
+#lhn-selectors .selector-icon {
+    position: absolute !important;
+    left: 10px !important;
+}
+
+#sub-tree .folder-toggle,
+#sub-tree > .folder > ul > .sub > .link > .sub-icon {
+    position: absolute !important;
+    margin-left: 10px !important;
+}
+
+/* subs in folder alignments */
+
+#sub-tree > .folder > ul > .folder > ul > .sub > .link > .sub-icon {
+    position: absolute !important;
+    margin-left: 20px !important;
+}
+
+#sub-tree > .folder > ul > .folder > ul > .sub > .link > .sub-name-text {
+    padding-left: 50px !important;
+}
+
+/* Nav items height */
+
+#lhn-selectors .selector,
+#sub-tree .sub,
+#sub-tree .link {
+	border-top: 1px solid transparent !important;
+    height: auto !important;
+    line-height: 2.5em !important;
+}
+
+/* Nav items hover effect clear */
+
+#lhn-selectors .selector:hover,
+#sub-tree .link:hover {
+    background: none !important;
+}
+
+/* Nav selected items highlight */
+
+#lhn-selectors .selected,
+#sub-tree .tree-link-selected,
+#lhn-selectors .selected:hover,
+#sub-tree .tree-link-selected:hover {
+    border-top: 1px solid #FFFFFF !important;
+    box-shadow: 0px 0px 2px 0px #555555 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F6F5F0), to(#EDEBE1)) !important;
+}
+
+/* Nav unread count */
+
+#reading-list-unread-count,
+#scrollable-sections .unread > a > .unread-count {
+    position: absolute !important;
+    top: 7px !important;
+    right: -10px !important;
+    background-color: #EEEDE4 !important;
+    line-height: 12px !important;
+    padding-right: 5px !important;
+    padding-bottom: 2px !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    border-radius: 4px !important;
+    border: 1px solid #BEBCB0 !important;
+    color: #A1A099 !important;
+}
+
+/* fix All items unread count */
+
+#reading-list-unread-count {
+    top: 2px !important;
+}
+
+
+#sub-tree li .collapsed .folder-toggle {
+    -webkit-transform: rotate(0deg) !important;
+}
+
+#sub-tree li .expanded .folder-toggle {
+    -webkit-transform: rotate(90deg) !important;
+}
+
+
+#sub-tree li .folder.expanded {
+	background-color: #FFF !important;
+}
+
+#scrollable-sections #sub-tree, #scrollable-sections #lhn-selectors {
+	width: @feeds_width !important;	
+}
+
+#lhn-subscriptions .lhn-section-primary {
+	display: none !important;
+}
+
+.folder ul {
+	margin-left: 0px !important;	
+}
+
+.folder ul ul {
+	margin-left: @folder_indent !important;	
+}
